@@ -6,6 +6,6 @@
   <img alt="Cadastro" title="#cadastro" src="./printsReadme/cadastropessoa.jpg" />
   <img alt="Dashboard" title="#dashboard" src="./printsReadme/4cadastrados.jpg" />
   <img alt="Casos" title="#casos" src="./printsReadme/cadastro.jpg" />
-  <img alt="gif" title="#gif" width: 120px height: auto src="./printsReadme/mobile.gif" />
+  <img alt="gif" title="#gif" width= "250" height="450" src="./printsReadme/mobile.gif" />
 </h1>
 
