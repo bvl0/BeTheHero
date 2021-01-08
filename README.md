@@ -6,5 +6,6 @@
   <img alt="Cadastro" title="#cadastro" src="./printsReadme/cadastropessoa.jpg" />
   <img alt="Dashboard" title="#dashboard" src="./printsReadme/4cadastrados.jpg" />
   <img alt="Casos" title="#casos" src="./printsReadme/cadastro.jpg" />
+  <img alt="Casos" title="#casos" src="./printsReadme/mobile.gif" />
 </h1>
 
