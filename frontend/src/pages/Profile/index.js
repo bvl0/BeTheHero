@@ -4,6 +4,7 @@ import './styles.css'
 import {FiPower, FiTrash2} from 'react-icons/fi'
 
 import api from '../../Services/api'
+import api2 from '../../Services/api2.js';
 import logo from '../../assets/logo.svg'
 
 
@@ -15,21 +16,14 @@ export default function Profile(){
     const [incidents, setIncidents] = useState([]);
     
     useEffect(()=>{
-        api.get('profile',{
-            headers: {
-                Authorization: ongId,
-            }
-        }).then(response => {
+        api2.get('incidents').then(response => {
             setIncidents(response.data)
         })
     }, [ongId]);
 
     async function handleDeleteIncident(id){
         try{
-            await api.delete(`incidents/${id}`, {
-                headers : {
-                    Authorization: ongId,
-                }
+            await api2.delete(`incidents/${id}`, {
             });
         
         setIncidents(incidents.filter(incident => incident.id !== id))

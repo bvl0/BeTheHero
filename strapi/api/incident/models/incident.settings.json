@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "incidents",
+  "info": {
+    "name": "incident"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "ong_id": {
+      "type": "string"
+    }
+  }
+}

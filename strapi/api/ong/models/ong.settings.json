@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ongs",
+  "info": {
+    "name": "ong",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "number": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "uf": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "incidents": {
+      "collection": "incident"
+    }
+  }
+}

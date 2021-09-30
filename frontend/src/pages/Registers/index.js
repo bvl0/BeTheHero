@@ -3,6 +3,7 @@ import {FiArrowLeft} from 'react-icons/fi'
 import {Link, useHistory} from 'react-router-dom'
 import './styles.css'
 import api from '../../Services/api'
+import api2 from '../../Services/api2.js';
 
 import logo from '../../assets/logo.svg'
 export default function Register(){
@@ -26,7 +27,13 @@ export default function Register(){
             uf,
         };
         try{
-            const response = await api.post('ongs',data);
+            const response = await api2.post('ongs',{
+                name:data.name,
+                email:data.email,
+                number:data.whatsapp,
+                city:data.city,
+                uf:data.uf,    
+            });
             alert(`seu ID de acesso: ${response.data.id}`);
 
             history.push('/')

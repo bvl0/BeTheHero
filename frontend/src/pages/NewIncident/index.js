@@ -5,6 +5,7 @@ import {FiArrowLeft} from 'react-icons/fi'
 import logo from '../../assets/logo.svg'
 
 import api from '../../Services/api';
+import api2 from '../../Services/api2.js';
 
 export default function NewIncident(){
     const[title, setTitle]= useState('');
@@ -17,15 +18,11 @@ export default function NewIncident(){
         e.preventDefault();
 
         try{
-             await api.post('incidents', {
-                "title": title,
-                "description": description,
-                "value": value,
-                
-            },{
-            headers:{
-                Authorization : ongId,
-            }})
+             await api2.post('incidents', {
+                title: title,
+                description: description,
+                value: value,           
+            })
 
         history.push('/profile')
         }
